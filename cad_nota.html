@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Nota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Emitir Nota Fiscal</h2>
+        <form action="#" method="post">
+            
+            <label for="nota_data">Data de Emissão:</label>
+            <input type="date" name="nota_data" id="nota_data" required>
+
+            <label for="dt_envio">Data de Envio:</label>
+            <input type="date" name="dt_envio" id="dt_envio" required>
+
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" name="cnpj" id="cnpj" placeholder="00.000.000/0001-00" maxlength="18" required>
+
+            <label for="vl_total">Valor Total:</label>
+            <input type="number" step="0.01" name="vl_total" id="vl_total" required>    
+
+            <button type="submit">Criar Nota</button>
+        </form>
+        <div class="nav-links">
+            <a href="cad_item_nota.html">Próximo Passo: Adicionar Itens</a>
+            <a href="home.html">Voltar para Home</a>
+        </div>
+    </div>
+</body>
+</html>

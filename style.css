@@ -1,0 +1,196 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #263b78, #4B5FA7, #7186cf);
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* CABEÇALHO */
+.header-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+/* IMAGEM */
+.logo-circular {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* TÍTULO DO CABEÇALHO */
+.header-login h1 {
+    font-size: 42px;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* CAIXA PRINCIPAL */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* TÍTULOS */
+h1, h2 {
+    color: #263765;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* ETIQUETAS */
+label {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #34446c;
+    font-size: 15px;
+}
+
+/* CAMPOS */
+input, select {
+    width: 100%;
+    padding: 13px 15px;
+    margin-top: 5px;
+
+    border: 1.5px solid #d5dced;
+    border-radius: 9px;
+
+    background: #f7f8fc;
+    color: #263765;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* EFEITO NOS CAMPOS */
+input:focus, select:focus {
+    border-color: #4169e1;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(65, 105, 225, 0.12);
+}
+
+/* BOTÕES */
+button, .btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+
+    background: linear-gradient(135deg, #4169e1, #263f91);
+    color: white;
+
+    border: none;
+    border-radius: 9px;
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(38, 63, 145, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* EFEITO DO BOTÃO */
+button:hover, .btn:hover {
+    background: linear-gradient(135deg, #263f91, #17264f);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(38, 63, 145, 0.3);
+}
+
+/* LINKS */
+.nav-links {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: #4169e1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #17264f;
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .header-login {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .logo-circular {
+        width: 105px;
+        height: 105px;
+    }
+
+    .header-login h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 28px 22px;
+    }
+
+    .container h2 {
+        font-size: 23px;
+    }
+}
